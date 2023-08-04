@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            pseudo element
+        </title>
+        <style>
+            p::first-line{
+                background-color: blue;
+                color: aqua;
+            }
+            h1::first-letter{
+                background-color: rosybrown;
+                color: brown;
+                font-size: 50px;
+                text-transform: capitalize;
+            }
+            h2::before{
+                content: '✓';
+            }
+            h2::after{
+                content: '✓';
+            }
+            /* listing change */
+            ::marker{
+                font-size: 25px;
+                color: brown;
+                list-style-type: disc;
+            }
+            ::selection{
+                background-color: aqua;
+                color: blue;
+            }
+            img{
+                opacity: 0.2;
+            }
+            img:hover{
+                opacity:1;
+                height: auto;
+                width: 50%;
+                border-radius: 15px;
+            }
+            body{
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quod saepe ratione aliquid magnam. Labore, minus voluptatum! Corrupti quos omnis quaerat vel, aut molestiae tenetur sint id autem, aliquam temporibus dolor placeat asperiores accusamus odio natus nobis enim cupiditate? Amet, odio ratione! Minima, non assumenda? Minima aliquam porro velit ea debitis quo nisi soluta dicta odit consequatur, quas, similique reiciendis nulla! Rem maxime, dignissimos, voluptatum voluptate cum sequi repellat enim odit sint molestiae vel obcaecati debitis deserunt, saepe non! Soluta corporis laboriosam enim, labore deleniti quidem explicabo placeat. Cumque, eum sint eaque voluptates laboriosam distinctio incidunt ipsa rerum perspiciatis quisquam.
+
+        </p>
+        <h1>
+            hello world!
+        </h1>
+        <h2>
+            heading2
+        </h2>
+        <ul>
+            <li>M</li>
+            <li>M</li>
+            <li>M</li>
+            <li>M</li>
+        </ul>
+        <ol>
+            <li>M</li>
+            <li>M</li>
+            <li>M</li>
+            <li>M</li>
+        </ol>
+        <img src="image1.webp" alt="#" height="auto" width="100%">
+    </body>
+</html>

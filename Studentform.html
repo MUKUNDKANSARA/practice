@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>form11</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        input,
+        textarea,
+        select {
+            /* margin-left: 50px; */
+
+            border: 2px solid aqua;
+        }
+
+        input[type=password] {
+            /* margin-left: 50px; */
+            width: 324px;
+        }
+
+        #em {
+            width: 324px;
+        }
+
+        #nm {
+            width: 108px;
+        }
+
+        #btn {
+            /* display: inline-block; */
+            width: 100px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            font-family: cursive;
+            font-size: large;
+            margin: 50px 560px;
+            
+            
+            
+        }
+        #s{
+            color: red;
+        }
+        form{
+            color: black;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>student form</h1><br><br>
+    <form>
+        Name: <input type="text" placeholder="First Name" id="nm"> <input type="text" placeholder="Middle Name" id="nm">
+        <input type="text" placeholder="Last Name" id="nm"><br><br>
+        Email: <input type="email" placeholder="abc@example.com" id="em"><br><br>
+        Password: <input type="password" placeholder="password"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="s">(length:8-20| must contain a upper case lower
+        case,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;number,special symbol mamber)</span><br><br>
+        confirm password: <input type="password" placeholder="password"><br><br>
+        Address: <textarea></textarea><br><br>
+        College Name: <input type="text" placeholder="College name"><br><br>
+        Mobile No.: +<input type="tel" placeholder="91"> <input type="tel" placeholder="10 digit number"><br><br>
+        Gender: <select>
+            <option>Male</option>
+            <option>Female</option>
+        </select><br><br>
+        city:<input type="text" placeholder="city"><br><br>
+        state:<input type="text" placeholder="state"><br><br>
+        Country: <input type="text" placeholder="country"><br><br>
+        Hobbie: <input type="checkbox" checked>Music<input type="checkbox">sports<input type="checkbox">Games<input
+            type="checkbox">other<br><br>
+        <button type="submit" id="btn">submit</button>
+    </form>
+</body>
+
+</html>

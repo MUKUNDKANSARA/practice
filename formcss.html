@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+        <style>
+            #btn{
+                color: aqua;
+                text-align: center;
+                background-color: blueviolet;
+                border-radius: 4px;
+                border-color: rgb(163, 134, 190);
+            }
+            #btn:hover{
+                cursor: pointer;
+                color: brown;
+                background-color: yellowgreen;
+
+            }
+            #btn:active{
+                color: yellow;
+                background-color:whitesmoke ;
+                
+            }
+            #h1{
+                color: violet;
+                text-align: center;
+            }
+            .container{
+                border: 2px solid red;
+            }
+            .form{
+                border: 2px solid blue;
+                margin: 2px 2px 2px 2px;
+                padding-left: 12px;
+                color: yellowgreen;
+            }
+        
+           
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+        <h1 id="h1">This is form example</h1>
+        <form class="form">
+           Name: <input type="text" placeholder="type your name" class="ip"><br>
+           contact:<input type="number" placeholder="number"class="ip"><br>
+           age:<input type="number"class="ip"><br>
+           password:<input type="password"class="ip" ><br>
+           date:<input type="date"class="ip"><br>
+           occupation: <input type="radio" name="m"class="ip">webdeveloper<input type="radio" name="m"class="ip">android developer<input type="radio" name="m"class="ip">frontend developer<br>
+           skill: <input type="checkbox" name="m"class="ip">HTML<input type="checkbox" name="m"class="ip">CSS<input type="checkbox" name="m"class="ip">JS<br>
+           choose your country:<select><option>IND</option><option>US</option><option>UK</option></select><br>
+           email:<input type="email" placeholder="abc@gmail.com"class="ip"><br>
+           time:<input type="time"class="ip"><br>
+           <input type="color"class="ip"><br>
+           <input type="month"class="ip"><br>
+           <input type="week"class="ip"><br>
+           <input type="tel"class="ip"><br>
+           <input type="url"class="ip"><br>
+           <input type="file"class="ip"><br>
+           <!-- <input type="submit" id="submit"> -->
+           <!-- <input type="reset"> -->
+           <button type="submit" id="btn">SignUp</button><br>
+        </form>
+    </div>
+    </body>
+</html>

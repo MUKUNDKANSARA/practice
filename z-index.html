@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>z-index</title>
+        <style>
+            div{
+                border: 1px solid red;
+                height: 200px;
+                width: 200px;
+                position: absolute;
+                text-align: center;
+                margin-left: 500px;
+                margin-top: 200px;
+              
+
+            }
+            .b1{
+                background-color: red;
+                color: white;
+                font-size: 20px;
+                border-radius: 20px;
+                
+            }
+            .b2{
+                background-color: aqua;
+                top: 60px;
+                left: 60px;
+                z-index: 3;
+                color: blue;
+                font-size: 20px;
+                border-radius: 20px;
+            }
+            .b3{
+                background-color: aquamarine;
+                top: 120px;
+                left: 120px;
+                z-index: -1;
+                color: yellowgreen;
+                font-size: 20px;
+                border-radius: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="b1">z-index</div>
+        <div class="b2">z-index-3</div>
+        <div class="b3">z-index -1</div>
+    </body>
+</html>

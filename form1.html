@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form tag</title>
+        <style>
+            .form{
+                color: aqua;
+                border: 2px solid rgb(114, 27, 107);
+                padding: 20px 10px;
+                width: 500px;
+                margin: auto;
+                font-size: 25px;
+                border-radius: 4px;
+                
+            }
+            h1{
+                text-align: center;
+                text-decoration: dotted;
+                text-transform: capitalize;
+                color: aqua;
+            }
+            body{
+                background-color: blue;
+            }
+            input{
+                color: antiquewhite;
+                
+            }
+            input::placeholder{
+                color: rgb(148, 19, 94);
+                /* font-size: 10px; */
+                font-weight: bold;
+                font-size: 15px;
+                text-transform: capitalize;
+            }
+            #s{
+                color: rgb(11, 96, 129);
+            }
+           .btn{
+            color: aqua;
+            background-color: rgb(124, 124, 196);
+            text-transform: capitalize;
+            /* font-size: 25px; */
+            width: 100px;
+            border-radius: 4px;
+           }
+           .btn:hover{
+                cursor: pointer;
+                color: rgb(30, 0, 87);
+                background-color: aquamarine;
+           }
+        
+        </style>
+    </head>
+    <body>
+        <h1> this is the form </h1>
+        <form class="form" >
+            Name :  <input type="text" placeholder="type your name"><br><br>
+            age : <input type="number" placeholder="type your age"><br><br>
+            password : <input type="password" placeholder="password"><br><br>
+            Gender : M <input type="radio" name="m"> F <input type="radio" name="m"><br><br>
+            Address : <textarea></textarea><br><br>
+            Course : HTML <input type="checkbox" name="m"> CSS <input type="checkbox" name="m"> JS <input type="checkbox" name="m"><br><br>
+            Photo : <input type="file"><br><br>
+            choose any one: 
+            <select id="s">
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JS</option>
+            </select><br>
+            choose any one:
+            <select id="s">
+                <optgroup label="webdeveloper">
+                    <option>java</option>
+                    <option>python</option>
+                    <option>pHP</option>
+                </optgroup>
+                <optgroup label="webdesign">
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JS</option>
+
+                </optgroup>
+            </select>
+            <button type="reset" class="btn">reset</button>
+            <button type="submit"class="btn">submit</button>
+        </form>
+    </body>
+</html>
