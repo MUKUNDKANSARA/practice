@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <style>
+      .main {
+        width: 80%;
+        height: 500px;
+        /* border: 2px solid red; */
+        background-color: white;
+        display: flex;
+        margin: 8% auto;
+      }
+      .left {
+        width: 50%;
+        height: 500px;
+        background-color: rgb(78, 78, 177);
+        /* border: 2px solid red; */
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+      }
+      .right {
+        width: 50%;
+        height: 500px;
+        background-color: azure;
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+      }
+      .text {
+        color: white;
+        width: 60%;
+        margin: 28% auto;
+      }
+      .btn {
+        background-color: rgb(78, 78, 177);
+        color: white;
+        border: 1px solid white;
+        padding: 13px 29px;
+        border-radius: 23px;
+      }
+      input[type="text"] {
+        display: block;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid gray;
+        margin-bottom: 50px;
+        padding: 9px;
+      }
+      .btn1 {
+        width: 100%;
+        background-color: rgb(78, 78, 177);
+        color: white;
+        border: none;
+        padding: 9px;
+        border-radius: 16px;
+        filter: drop-shadow(2px 4px 4px grey);
+      }
+      .circle {
+        position: absolute;
+        top: 50%;
+        left: 43%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle">
+      <svg
+        width="195"
+        height="185"
+        viewBox="0 0 195 185"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M195 92.5C195 143.586 151.348 185 97.5 185C43.6522 185 0 143.586 0 92.5C0 41.4137 43.6522 0 97.5 0C151.348 0 195 41.4137 195 92.5ZM35.6501 92.5C35.6501 124.907 63.3412 151.178 97.5 151.178C131.659 151.178 159.35 124.907 159.35 92.5C159.35 60.0929 131.659 33.8218 97.5 33.8218C63.3412 33.8218 35.6501 60.0929 35.6501 92.5Z"
+          fill="white "
+        />
+      </svg>
+    </div>
+    <div class="main">
+      <div class="left">
+        <div class="text">
+          <h1>
+            <span style="border-bottom: 4px solid white">Welco</span>me to MDM
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt,
+            ullam veritatis mollitia nostrum sunt accusantium?
+          </p>
+          <button class="btn">Know More</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="text">
+          <h1 style="color: black">
+            Si<span style="border-bottom: 4px solid rgb(29, 185, 178)">gni</span
+            >n
+          </h1>
+          <input type="text" placeholder="Enter Username" />
+          <input type="text" placeholder="Enter password" />
+          <button class="btn1">LOGIN</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
